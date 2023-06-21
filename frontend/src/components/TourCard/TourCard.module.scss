@@ -1,0 +1,83 @@
+.shadow {
+	background: linear-gradient(0deg, #000000 0.49%, rgba(26, 26, 26, 0.784654) 29.99%, rgba(0, 0, 0, 0) 95.93%);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.2s linear all;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	height: 175.6px;
+}
+
+.date,
+.price {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.date {
+	svg {
+		fill: white;
+	}
+	display: flex;
+	column-gap: 5px;
+}
+
+.footer {
+	opacity: 0;
+	height: 0;
+	justify-content: center;
+	visibility: hidden;
+	display: flex;
+	column-gap: 23px;
+	transition: 0.2s linear all;
+}
+
+.TourCard {
+	width: 360px;
+	position: relative;
+	height: 441px;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	cursor: pointer;
+	padding-bottom: 51px;
+	&:hover {
+		.footer {
+			opacity: 1;
+			visibility: visible;
+			height: 44px;
+			padding-top: 20px;
+		}
+		.shadow {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.small {
+	width: 260px;
+	height: 320px;
+}
+.img {
+	object-fit: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	border-radius: 50px;
+	z-index: -1;
+	height: 100%;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 33px;
+	text-align: center;
+}

@@ -1,0 +1,44 @@
+.dote {
+	width: 10px;
+	display: block;
+	height: 10px;
+	border-radius: 50%;
+	background: #ab0000;
+}
+
+.line {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 30px;
+	display: block;
+	height: 3px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--primary-color), var(--primary-color));
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 6px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #291c1c;
+	transition: 0.2s linear all;
+}
+
+.days {
+	display: flex;
+	justify-content: space-between;
+}
+
+.TourTowns {
+	margin-top: 70px;
+	position: relative;
+}
+
+.active {
+	color: var(--primary-color);
+}

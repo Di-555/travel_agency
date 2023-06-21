@@ -1,0 +1,29 @@
+.TourDay {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 40px;
+}
+
+.number {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.left {
+	width: 100%;
+	overflow: hidden;
+}
+.img {
+	width: 561.5px;
+	height: 374px;
+	border-radius: 50px;
+}
+
+.desc {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	width: 100%;
+
+}

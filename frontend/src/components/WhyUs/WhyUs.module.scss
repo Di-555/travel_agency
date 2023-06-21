@@ -1,0 +1,53 @@
+.inner {
+	display: flex;
+	column-gap: 100px;
+	align-items: center;
+}
+.gallery {
+	display: grid;
+	gap: 23px;
+	grid-template-areas:
+		"photo changan"
+		"vietnam vietnam";
+}
+.text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	span {
+		font-size: 32px;
+		line-height: 30px;
+		color: var(--primary-color);
+	}
+}
+
+.tags {
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
+}
+.tag {
+	border: 3px solid var(--primary-color);
+	border-radius: 50px;
+	text-align: center;
+	padding: 20px;
+	span {
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 59px;
+	}
+}
+.photographer {
+	grid-area: photo;
+}
+.vietnam {
+	grid-area: vietnam;
+}
+.changan {
+	grid-area: changan;
+}

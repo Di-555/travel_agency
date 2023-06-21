@@ -1,0 +1,46 @@
+.prev,
+.next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 70px;
+	height: 70px;
+
+	cursor: pointer;
+	transition: 0.2s linear all;
+	background: white;
+	border-radius: 50%;
+	svg {
+		stroke: black;
+	}
+	&:hover {
+		background-color: var(--primary-color);
+		svg {
+			stroke: white;
+		}
+	}
+}
+
+.prev {
+	svg {
+		transform: scale(1, -1) rotate(-180deg);
+	}
+}
+
+.btns {
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 30px;
+	margin-top: 60px;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.topNav {
+	position: absolute;
+	right: 0;
+	top: -160px;
+}

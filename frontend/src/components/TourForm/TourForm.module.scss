@@ -1,0 +1,71 @@
+.TourForm {
+	width: 1000px;
+	padding: 30px;
+	color: black;
+	height: 90vh;
+	overflow-y: scroll;
+}
+.inner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	align-items: flex-start;
+	input {
+		width: 500px;
+	}
+}
+.img {
+	max-height: 200px;
+	width: auto;
+}
+.title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.suptitle {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.desc {
+	resize: none;
+	padding: 26px 10px 10px 16px;
+	font-weight: 500;
+	color: black;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	outline: none;
+	background: none;
+	width: 640px;
+	height: 200px;
+}
+
+.date {
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	font-weight: 500;
+	color: black;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	width: 200px;
+	outline: none;
+	position: relative;
+	svg {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	background: none;
+}
+
+.header {
+	color: #737373;
+	font-size: 14px;
+	line-height: 17px;
+}

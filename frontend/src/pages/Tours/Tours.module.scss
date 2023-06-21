@@ -1,0 +1,26 @@
+.Tours {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"filters inner";
+	grid-template-columns: 300px 1fr;
+	column-gap: 40px;
+}
+.inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	grid-area: inner;
+}
+.header {
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 55px 0;
+}
+.filters {
+	grid-area: filters;
+}

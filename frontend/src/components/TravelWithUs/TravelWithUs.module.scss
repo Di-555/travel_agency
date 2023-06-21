@@ -1,0 +1,30 @@
+.TravelWithUs {
+	display: grid;
+	background-color: white;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 52px;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.content {
+	padding: 40px 20px 40px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 20px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #000000;
+}
+
+.button {
+	margin-top: 20px;
+}

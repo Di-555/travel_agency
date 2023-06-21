@@ -1,0 +1,45 @@
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 16px;
+	height: 16px;
+
+	transition: 0.2s linear all;
+
+	border: 1px solid var(--primary-color);
+	border-radius: 5px;
+	svg {
+		opacity: 0;
+		transition: 0.2s linear all;
+	}
+}
+
+.text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: white;
+}
+
+.checked {
+	svg {
+		opacity: 1;
+	}
+}
+
+.wrapper {
+	position: relative;
+
+	display: flex;
+
+	align-items: center;
+	background: none;
+	width: 100%;
+
+	cursor: pointer;
+	transition: 0.2s linear all;
+
+	column-gap: 6px;
+}

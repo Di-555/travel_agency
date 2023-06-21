@@ -1,0 +1,16 @@
+.AboutBlock {
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	align-items: center;
+	gap: 40px;
+}
+
+.reversed {
+  direction: rtl;
+}
+
+.text {
+	text-align: left;
+	font-size: 24px;
+	line-height: 26px;
+}

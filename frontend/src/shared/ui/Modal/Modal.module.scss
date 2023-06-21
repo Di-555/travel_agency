@@ -1,0 +1,39 @@
+.modal {
+	position: fixed;
+	display: flex;
+
+	transition: 0.4s ease-in-out all;
+	visibility: hidden;
+	opacity: 0;
+
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	z-index: 999;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	background: white;
+	transition: all 400ms ease-in-out;
+	border-radius: 50px;
+	transform: scale(0);
+	max-height: 90%;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	width: auto;
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+	.content {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(100%);
+	}
+}
